@@ -1,0 +1,184 @@
+/* Reset de estilos para garantizar la consistencia entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 20px;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px; /* Añadimos bordes redondeados al encabezado */
+}
+
+/* Estilos para los títulos de sección */
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+/* Estilos para los componentes */
+.component {
+    background-color: rgba(255, 255, 255, 0.8); /* Añadimos transparencia al fondo */
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Añadimos bordes redondeados a los componentes */
+    margin-bottom: 20px;
+    padding: 20px;
+    position: relative; /* Establecemos la posición relativa para permitir el posicionamiento absoluto de la imagen */
+}
+
+.component:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 200px; /* Ancho de la imagen */
+    background-image: url('placabase.jpg'); /* Ruta de la imagen para la placa base */
+    background-size: cover;
+    background-position: center;
+}
+
+.component:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 200px; /* Ancho de la imagen */
+    background-image: url('procesador.png'); /* Ruta de la imagen para el procesador */
+    background-size: cover;
+    background-position: center;
+}
+
+.component:nth-child(4)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 200px; /* Ancho de la imagen */
+    background-image: url('ram.jpg'); /* Ruta de la imagen para el procesador */
+    background-size: cover;
+    background-position: center;
+}
+
+.component:nth-child(5)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 200px; /* Ancho de la imagen */
+    background-image: url('ssd.png'); /* Ruta de la imagen para el procesador */
+    background-size: cover;
+    background-position: center;
+}
+
+.component:nth-child(6)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 200px; /* Ancho de la imagen */
+    background-image: url('carcasa.jpg'); /* Ruta de la imagen para el procesador */
+    background-size: cover;
+    background-position: center;
+}
+
+.component:nth-child(7)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 200px; /* Ancho de la imagen */
+    background-image: url('bateria.jpg'); /* Ruta de la imagen para el procesador */
+    background-size: cover;
+    background-position: center;
+}
+
+.component:nth-child(8)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 200px; /* Ancho de la imagen */
+    background-image: url('pantalla.jpeg'); /* Ruta de la imagen para el procesador */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilos para las listas de características */
+.component ul {
+    list-style-type: none;
+}
+
+/* Estilos para los elementos de lista de características */
+.component li {
+    margin-bottom: 5px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-radius: 10px; /* Añadimos bordes redondeados al pie de página */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agregamos sombra */
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    text-align: center;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 1em;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+/* Estilos para los botones */
+.menu a {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+    background-color: rgba(245, 245, 245, 0.8); /* Añadimos transparencia al fondo del botón */
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Hacemos los botones más redondos */
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agregamos sombra */
+}
+
+.menu a:hover {
+    background-color: rgba(221, 221, 221, 0.8); /* Cambiamos el color de fondo al pasar el ratón */
+    transform: translateY(-2px); /* Elevamos ligeramente el botón al pasar el ratón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aumentamos la sombra al pasar el ratón */
+}
