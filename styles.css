@@ -45,7 +45,7 @@ h1, h2 {
     right: 0;
     bottom: 0;
     width: 200px; /* Ancho de la imagen */
-    background-image: url("placabase.jpg"); /* Ruta de la imagen para la placa base */
+    background-image: url('placabase.jpg'); /* Ruta de la imagen para la placa base */
     background-size: cover;
     background-position: center;
 }
