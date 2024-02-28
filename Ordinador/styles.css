@@ -1,0 +1,259 @@
+/* Reset de estilos para garantizar la consistencia entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #292739;
+    color: #333;
+    padding: 0px;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #292739;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #eaeef0;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px; /* Añadimos bordes redondeados al encabezado */
+    margin-top: 5px;
+}
+
+h1 {
+    box-shadow: inset 0px 5px 10px rgba(47, 240, 251, 0.25);
+}
+
+/* Estilos para los títulos de sección */
+h2 {
+    margin-bottom: 15px;
+    margin-right: 180px;;
+    background-color: #292739;
+    color: #eaeef0;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.scroll {
+    background-color: #eaeef0;
+    display: flex; /* Utilizamos flexbox para organizar las imágenes */
+    overflow: hidden;
+    text-align: center; /* Alineamos las imágenes al centro horizontalmente */
+    margin-bottom: 200px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Agregamos sombra */
+}
+
+.victuscroll {
+    display: flex;
+    transition: transform 1.5s ease; /* Añadimos una transición suave para el desplazamiento automático */
+    animation: scrolldesplaz 60s infinite; /* Animación para desplazarse automáticamente */
+}
+
+.victuscroll img {
+    flex: 0 0 auto;
+    margin-right: 38%;
+    margin-left: 37%;
+    max-width: 25%; /* Ajustamos el tamaño máximo de las imágenes */
+    height: auto;
+    object-fit: contain; /* Para mantener la relación de aspecto y que las imágenes no se distorsionen */
+}
+
+@keyframes scrolldesplaz {
+    0% { transform: translateX(0); } /* Comienza desde la posición original */
+    20% { transform: translateX(0); } /* Se mantiene durante un quinto de la animación */
+    25% { transform: translateX(-100%); } /* Se desplaza hacia la izquierda */
+    30% { transform: translateX(-100%); } /* Se mantiene durante un 5% de la animación */
+    35% { transform: translateX(-200%); } /* Se desplaza hacia la izquierda */
+    40% { transform: translateX(-200%); } /* Se mantiene durante otro 5% de la animación */
+    45% { transform: translateX(-300%); } /* Se desplaza hacia la izquierda */
+    50% { transform: translateX(-300%); } /* Se mantiene durante otro 5% de la animación */
+    55% { transform: translateX(-400%); } /* Se desplaza hacia la izquierda */
+    60% { transform: translateX(-400%); } /* Se mantiene durante otro 5% de la animación */
+    65% { transform: translateX(-500%); } /* Se desplaza hacia la izquierda */
+    70% { transform: translateX(-500%); } /* Se mantiene durante otro 5% de la animación */
+    75% { transform: translateX(-600%); } /* Se desplaza hacia la izquierda */
+    80% { transform: translateX(-600%); } /* Se mantiene durante otro 5% de la animación */
+    100% { transform: translateX(0); } /* Se desplaza progresivamente hacia la derecha durante el qiunto restante de la animación para volver a la primera imagen */
+}
+
+/* Estilos para los componentes */
+.component {
+    background-color: rgba(255, 255, 255, 0.8); /* Añadimos transparencia al fondo */
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Añadimos bordes redondeados a los componentes */
+    margin-bottom: 20px;
+    padding: 20px;
+    position: relative; /* Establecemos la posición relativa para permitir el posicionamiento absoluto de la imagen */
+    box-shadow: 0px 5px 10px rgba(47, 240, 251, 0.25);
+}
+
+.component:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 200px; /* Ancho de la imagen */
+    background-image: url('placabase.jpg'); /* Ruta de la imagen para la placa base */
+    background-size: cover;
+    background-position: center;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.component:nth-child(4)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 200px; /* Ancho de la imagen */
+    background-image: url('procesador.png'); /* Ruta de la imagen para el procesador */
+    background-size: cover;
+    background-position: center;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.component:nth-child(5)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 200px; /* Ancho de la imagen */
+    background-image: url('ram.jpg'); /* Ruta de la imagen para el procesador */
+    background-size: cover;
+    background-position: center;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.component:nth-child(6)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 200px; /* Ancho de la imagen */
+    background-image: url('ssd.png'); /* Ruta de la imagen para el procesador */
+    background-size: cover;
+    background-position: center;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.component:nth-child(7)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 200px; /* Ancho de la imagen */
+    background-image: url('carcasa.jpg'); /* Ruta de la imagen para el procesador */
+    background-size: cover;
+    background-position: center;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.component:nth-child(8)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 200px; /* Ancho de la imagen */
+    background-image: url('bateria.jpg'); /* Ruta de la imagen para el procesador */
+    background-size: cover;
+    background-position: center;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.component:nth-child(9)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 200px; /* Ancho de la imagen */
+    background-image: url('pantalla.jpeg'); /* Ruta de la imagen para el procesador */
+    background-size: cover;
+    background-position: center;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.component:last-child{
+    margin-bottom: 200px;
+}
+
+/* Estilos para las listas de características */
+.component ul {
+    list-style-type: none;
+}
+
+/* Estilos para los elementos de lista de características */
+.component li {
+    margin-bottom: 5px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #292739;
+    color: #eaeef0;
+    text-align: center;
+    padding: 2px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -5px 10px rgba(47, 240, 251, 0.25); /* Agregamos sombra */
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    text-align: center;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 1em;
+    margin-bottom: 15px;
+    margin-top: -10px;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.menu li:last-child {
+    margin-right: 0px;
+}
+
+/* Estilos para los botones */
+.menu a {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+    background-color: rgba(234, 238, 240, 0.8); /* Añadimos transparencia al fondo del botón */
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Hacemos los botones más redondos */
+    transition: background-color 0.3s ease;
+    box-shadow: 0 5px 10px rgba(47, 240, 251, 0.25); /* Agregamos sombra */
+}
+
+.menu a:hover {
+    background-color: rgba(47, 241, 251, 0.956); /* Cambiamos el color de fondo al pasar el ratón */
+    border: 0px;
+    transform: translateY(-2px); /* Elevamos ligeramente el botón al pasar el ratón */
+    box-shadow: 0 10px 20px rgba(47, 240, 251, 0.75); /* Aumentamos la sombra al pasar el ratón */
+}
