@@ -42,7 +42,7 @@ h2 {
 }
 
 .scroll {
-    background-color: #eaeef0;
+    background-color: #ffffff;
     display: flex; /* Utilizamos flexbox para organizar las imágenes */
     overflow: hidden;
     text-align: center; /* Alineamos las imágenes al centro horizontalmente */
